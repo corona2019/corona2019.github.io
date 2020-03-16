@@ -1,7 +1,11 @@
-var pdf = new PDFObject({
-    url: "https://github.com/corona2019/corona2019.github.io/raw/master/Corona_comic_PGI.pdf",
-    id: "pdfRendered",
-    pdfOpenParams: {
-      view: "FitH"
-    }
-  }).embed("pdfRenderer");
+//Floating Action Button
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, options);
+  });
+
+//ToolTip (Text-on-hover)
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, options);
+  });
